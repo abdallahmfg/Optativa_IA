@@ -1,0 +1,64 @@
+body {
+    font-family: Arial;
+    background-color: #f0f2f5;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #253858;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1746a2;
+}
+
+#webcam-container {
+    margin: 20px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#label-container {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#mensaje {
+    color: #2563eb;
+}
+
+#imagen {
+    max-width: 100%;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#historial {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

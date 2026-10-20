@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Mi primera Inteligencia Artificial</h1>
+    <p>Reconocimiento de móviles y botellas</p>
+
+    <button onclick="init()">Iniciar cámara</button>
+    <button onclick="detener()">Detener cámara</button>
+
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+
+    <h3 id="mensaje"></h3>
+
+    <h2>Confianza mínima: <span id="valor">80%</span></h2>
+    <input type="range" id="umbral" min="0" max="100"
+           value="80" oninput="cambiarUmbral()">
+
+    <h2>Subir una imagen</h2>
+    <input type="file" accept="image/*" onchange="subirImagen(event)">
+    <br>
+    <img id="imagen" width="200">
+    <p id="resultadoImagen"></p>
+
+    <h2>Historial</h2>
+    <ul id="historial"></ul>
+    <button onclick="limpiar()">Limpiar historial</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
