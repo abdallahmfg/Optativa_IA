@@ -1,1 +1,0 @@
-# Optativa_IA
